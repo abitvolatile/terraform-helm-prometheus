@@ -52,3 +52,11 @@ variable "prometheus_helm_chart_version" {
   description = "Prometheus Helm Chart Version"
   default     = ""
 }
+
+variable "grafana_adminuser" {
+  description = "Prometheus Operator Grafana Admin Username"
+}
+
+variable "grafana_adminpassword" {
+  description = "Prometheus Operator Grafana Admin Password"
+}

@@ -10,5 +10,23 @@ prometheus-operator:
       enabled: false
 
   grafana:
-    adminUser: grafanaadmin
+    adminUser: grafana
     adminPassword: telemetry
+
+#  Uncomment to use Publicly (aka. External) Accessible Load Balancer
+#    service:
+#      type: LoadBalancer
+#      port: 80
+#      targetPort: 3000
+#      portName: service
+  
+  prometheus:
+    prometheusSpec:
+      storageSpec:
+        volumeClaimTemplate:
+          spec:
+            storageClassName: standard
+            accessModes: ["ReadWriteOnce"]
+            resources:
+              requests:
+                storage: 10Gi
