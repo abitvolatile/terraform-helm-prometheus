@@ -20,10 +20,10 @@ variable "helm_chart_version" {
   description = "Helm Chart Version"
 }
 
-variable "prometheus_adminuser" {
-  description = "Prometheus Admin Username"
+variable "grafana_adminuser" {
+  description = "Prometheus Operator Grafana Admin Username"
 }
 
-variable "prometheus_adminpassword" {
-  description = "Prometheus Admin User Password"
+variable "grafana_adminpassword" {
+  description = "Prometheus Operator Grafana Admin Password"
 }

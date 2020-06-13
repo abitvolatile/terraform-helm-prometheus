@@ -29,5 +29,5 @@ kube_nodepool_disk_size     = "50"
 kube_nodepool_instance_type = "n1-standard-2"
 
 prometheus_helm_chart_version = ""
-prometheus_adminuser          = "grafanaadmin"
-prometheus_adminpassword      = "telemetry"
+grafana_adminuser             = "grafana-admin"
+grafana_adminpassword         = "Telemetry"
