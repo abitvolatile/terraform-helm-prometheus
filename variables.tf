@@ -19,3 +19,11 @@ variable "k8s_access_token" {
 variable "helm_chart_version" {
   description = "Helm Chart Version"
 }
+
+variable "prometheus_adminuser" {
+  description = "Prometheus Admin Username"
+}
+
+variable "prometheus_adminpassword" {
+  description = "Prometheus Admin User Password"
+}

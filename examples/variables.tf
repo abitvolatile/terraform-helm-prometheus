@@ -53,10 +53,10 @@ variable "prometheus_helm_chart_version" {
   default     = ""
 }
 
-variable "prometheus-adminuser" {
+variable "prometheus_adminuser" {
   description = "Prometheus Admin Username"
 }
 
-variable "prometheus-adminpassword" {
+variable "prometheus_adminpassword" {
   description = "Prometheus Admin User Password"
 }

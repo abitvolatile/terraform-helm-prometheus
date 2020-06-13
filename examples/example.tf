@@ -107,6 +107,6 @@ module "prometheus" {
   k8s_nodepool_name          = module.kubernetes.kubernetes_nodepool_a_name
   k8s_access_token           = module.kubernetes.google_service_account_access_token
   helm_chart_version         = var.prometheus_helm_chart_version
-  prometheus-adminuser       = var.prometheus-adminuser
-  prometheus-adminpassword   = var.prometheus-adminpassword
+  prometheus_adminuser       = var.prometheus_adminuser
+  prometheus_adminpassword   = var.prometheus_adminpassword
 }
