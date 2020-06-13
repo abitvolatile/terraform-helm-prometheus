@@ -1,0 +1,14 @@
+
+### Subchart Configurations
+
+prometheus-operator:
+  prometheusOperator:
+    admissionWebhooks:
+      enabled: false
+    createCustomResource: false
+    tlsProxy:
+      enabled: false
+
+  grafana:
+    adminUser: grafanaadmin
+    adminPassword: telemetry

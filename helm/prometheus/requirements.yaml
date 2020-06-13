@@ -1,0 +1,8 @@
+dependencies:
+
+  - name: prometheus-operator
+    repository: file://./charts/prometheus-operator
+
+  - name: cAdvisor
+    repository: file://./charts/cAdvisor
+

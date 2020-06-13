@@ -1,0 +1,6 @@
+apiVersion: v2
+name: cAdvisor
+description: A Helm chart for cAdvisor
+type: application
+version: 1.0.0.1
+appVersion: 0.30.2

@@ -1,0 +1,19 @@
+---
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: cadvisor
+  labels:
+    name: cadvisor
+    release: briight-monitoring
+spec:
+  jobLabel: pod-monitor
+  selector:
+    matchLabels:
+      app: cadvisor
+  namespaceSelector:
+    any: true
+  podMetricsEndpoints:
+  - port: http
+    path: /metrics
+    interval: 15s
