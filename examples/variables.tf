@@ -52,3 +52,11 @@ variable "prometheus_helm_chart_version" {
   description = "Prometheus Helm Chart Version"
   default     = ""
 }
+
+variable "prometheus-adminuser" {
+  description = "Prometheus Admin Username"
+}
+
+variable "prometheus-adminpassword" {
+  description = "Prometheus Admin User Password"
+}
